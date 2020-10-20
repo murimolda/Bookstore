@@ -1,0 +1,13 @@
+extends main-book-page
+
+block title
+	| Bookstore - Category-page
+
+block content
+	include header
+	include page-main-nav
+	section.book-directory
+		div.container
+			include side-bar-nav
+			include book-catalog
+	include footer

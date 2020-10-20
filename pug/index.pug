@@ -1,0 +1,14 @@
+extends main
+
+block title
+	| Bookstore
+
+block content
+	include basic-modules/header
+	include basic-modules/page-main-nav
+	include basic-modules/promo
+	section.book-directory
+		div.container
+			include basic-modules/side-bar-nav
+			include basic-modules/book-catalog
+	include basic-modules/footer

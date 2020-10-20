@@ -1,0 +1,37 @@
+header
+  div.header-top
+    div.container
+      nav.add-menu
+        a.add-menu_link(href="#") Sign in
+        a.add-menu_link(href="#") My Account
+        a.add-menu_link(href="#") Order Status
+        a.add-menu_link(href="#") Help
+  div.header_row
+    div.container
+      div.header_row-content
+        div.header_logo
+          a(href="index.html")
+            img(src="../../img/logo.png")
+        div.header_search
+          form.search_form
+            input(type='text' name='q')
+            img(src="../../img/search.png")
+            button(ype="submit") Search
+        div.shopping-basket
+          div.shopping-basket_row
+            a(href="#")
+              img(src="../../img/shopping-basket.png")
+              p Your cart
+              span.small ( 
+                span#shopping-basket_quantity 2
+                p items
+                |)
+          div.shopping-basket_row
+            span.big $
+              span#shopping-basket_sum 125.0
+            button.shopping-basket_button Checkout
+        div.wish-list
+          img(src="../../img/wish-star-round.png")
+          p Wish list
+          span#wish-list_quantity 20
+
